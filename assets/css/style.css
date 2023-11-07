@@ -300,10 +300,14 @@ body.nav-active { overflow: hidden; }
 }
 
 .header.active .logo-light,
-.header .logo-dark { display: none; }
+.header .logo-dark { 
+  display: none; 
+}
 
 .header .logo-light,
-.header.active .logo-dark { display: block; }
+.header.active .logo-dark { 
+  display: block; 
+}
 
 .nav-open-btn {
   font-size: 3.5rem;
@@ -607,8 +611,16 @@ body.nav-active { overflow: hidden; }
   height: auto; /* Maintain the aspect ratio */
 }
 
+@media (min-width: 768px) {
+  .logo-size {
+    width: 350px;
+  }
+}
 /* Media query for small screens */
 @media (max-width: 767px) {
+  .logo-size {
+    width: 280px;
+  }
   .about .container {
     flex-direction: column; /* Stack elements vertically for smaller screens */
     align-items: flex-start; /* Align content to the left for smaller screens */
